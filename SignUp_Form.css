@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* Header Default Tampilan */
+
+* {
+    text-decoration: none;
+    margin: 0em;
+    padding: 0em;
+}
+body {
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Open Sans', sans-serif;
+}
+.atas a img {
+    width: 1.5%;
+    float: left;
+    padding: 0.6% 2% 0.6% 3%;
+    text-align: right;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    line-height: 80px;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #160c04;
+    border-bottom: 0.5em solid #472c16;
+}
+header {
+    width: 1400px;
+    margin: auto;
+    position: relative;
+}
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color:#ffff;
+}
+.menu {
+    float: right;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li #search {
+  width: 5%;
+  margin-top: 1.5em;
+  padding: 0.1em;
+  margin-right: 1.5em;
+  border: 1px solid white;
+  background-image: url('https://icon-library.com/images/white-search-icon-png/white-search-icon-png-19.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+nav ul li a {
+    color: #ffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #fbdebe;
+}
+a.masuk {
+    background:#ffff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color:#473220;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.masuk:hover {
+    background:#473220;
+    text-decoration: none;
+    color:#ffff;
+}
+
+/* Menu Signup Next */
+
+.wrapper {
+    margin: 0;
+    padding-bottom: 2em;
+    background: #DEBA9D;
+    box-sizing: border-box;
+    position: static;
+    display: flex;
+    align-items: center;
+}
+#banner {
+    width: 63%;
+}
+#banner img{
+    margin-top: 3em;
+    width: 100%;
+    margin-left: 2em;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.signup-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(70%, -40%);
+  width: 28%;
+  background: #efe2cf;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  margin-top: 2%;
+}
+.star, #pesanErrorBox {
+  color: red;
+}
+.signup-form img {
+    position: absolute;
+    width: 4em;
+    overflow: hidden;
+    top: calc(-4em/2);
+    left: calc(50% - 2em);
+}
+.signup-form h2{
+  text-align: center;
+  padding: 5% 0;
+  margin-top: 8%;
+  border-bottom: 1px solid silver;
+}
+.signup-form form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .signup-col{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.signup-col input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.signup-col label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+/* 
+.tanggal label {
+    transform: none;
+    padding-bottom: 20%;
+} */
+.signup-col span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #201205;
+  transition: .5s;
+}
+.tanggal span::before{
+    background: #201205;
+}
+.signup-col input:focus ~ label,
+.signup-col input:valid ~ label{
+  top: -5px;
+  color: #201205;
+}
+.tanggal input:focus ~ label,
+.tanggal input:valid ~ label {
+    top: -0.1px;
+}
+.signup-col input:focus ~ span::before,
+.signup-col input:valid ~ span::before{
+  width: 100%;
+}
+.signup-form form a{
+  color: #a6a6a6;
+  text-decoration: none;
+  font-size: smaller;
+}
+.signup-form .forgot{
+  margin-bottom: 10%;
+}
+.signup-form form a:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #201205;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #201205;
+  transition: .6s;
+}
+form p{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+form p a{
+  color: #201205;
+  text-decoration: none;
+  font-weight: bold;
+}
+form p a:hover{
+  text-decoration: underline;
+  color: #201205;
+}
+
+/* Footer Default Tampilan */
+
+.wrapper3 {
+    background-color:#160c04;
+    margin: 0;
+    padding: 1em 7em 1em 7em;
+    list-style: none;
+    color: #ffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3em;
+    display: flex;
+    vertical-align: baseline;
+}
+.wrapper3 p {
+    padding: 1em 0em 0.5em 1em;
+    font-weight: bold;
+}
+.wrapper3 nav {
+    margin: auto;
+    padding: 0;
+    display:list-item;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+.wrapper3 nav ul {
+    padding: 0;
+}
+.wrapper3 nav #location {
+    display: flex;
+}
+.wrapper3 nav ul li {
+    clear: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.6em;
+}
+.wrapper3 nav ul li a {
+    float: right;
+}
+#ending {
+    background-color:#160c04;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: 0;
+    color: rgb(197, 192, 192);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
